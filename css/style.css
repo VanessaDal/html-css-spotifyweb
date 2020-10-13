@@ -6,6 +6,8 @@
 }
 
 
+/* containers */
+
 .big-container{
   position: relative;
   height:700px;
@@ -21,6 +23,8 @@
   height: 100px;
   width: calc(100vw - 220px);
   z-index: 50;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .container-left{
@@ -54,5 +58,30 @@
   width: calc(100% - 220px);
   height:600px;
   background-color: pink;
-  overflow: scroll;
+  overflow-y: scroll;
+}
+
+/* top container */
+
+.upgrade-button {
+  background-color: rgba(8, 11, 18, 0.5);
+  height: 45px;
+  width: 250px;
+  border: 1px solid white;
+  border-radius: 30px;
+  margin-right: 22px;
+  margin-top: 25px;
+  color: white;
+  padding: 13px 32px;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+/* left container */
+
+.spotify-logo>img{
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
