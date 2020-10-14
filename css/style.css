@@ -268,21 +268,30 @@
 
 .player{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
 }
 
-/* .player span:first-child{
-  display: inline-block;
+.player span:first-child{
   color: white;
-  padding-left: 250px;
-} */
+  padding-right: 20px;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.player span:last-child{
+  color: white;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 14px;
+}
 
 .total-bar {
   height: 5px;
   width: 50%;
   background-color: #5A5A5A;
   border-radius: 10px;
+  margin-top: 30px;
 }
 
 .player-progress-bar {
