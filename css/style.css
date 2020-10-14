@@ -126,5 +126,11 @@
 }
 
 .playlist span:nth-child(3){
-  padding-bottom: 15px;
+  display: inline-block;
+
+}
+
+.nome-playlist{
+  height: 200px;
+  overflow-y: auto;
 }
