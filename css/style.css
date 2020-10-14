@@ -162,3 +162,11 @@
   font-size: 15px;
   padding-left: 10px;
 }
+
+/* center container */
+.center-top-part{
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  padding:0 300px;
+}
