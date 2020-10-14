@@ -10,8 +10,8 @@
 
 .big-container{
   position: relative;
-  min-height:100vh;
-  min-width: 100vh;
+  height:100vh;
+  width: 100vw;
   background-color: red;
   font-family: 'Roboto', sans-serif;
 }
@@ -30,10 +30,12 @@
 
 
 
-.container-float{
+.container-float::after{
   content: "";
   display: table;
   clear: both;
+  width: 100%;
+  height: 100%;
 }
 
 .container-center{
@@ -54,10 +56,11 @@
 
 .container-left{
   float: left;
-  height: calc(100% - 100px);
+  height: calc(100vh - 100px);
   width: 220px;
   background: black;
   font-size: 14px;
+  overflow: hidden;
 }
 
 /* top container */
@@ -126,7 +129,7 @@
 
 
 .nome-playlist{
-  height: 200px;
+  height: 300px;
   overflow-y: auto;
 }
 
@@ -167,7 +170,6 @@
 
 /* center container */
 .center-top-part{
- min-width: 800px;
  display: flex;
  justify-content: space-between;
  align-items: center;
@@ -188,6 +190,67 @@
   height: 180px;
 }
 
-.center-first-row h2{
+.container-center h2{
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.center-second-row{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.center-second-row>.albums{
+  margin-right: 15px;
+  margin-top: 30px;
+}
+
+.center-third-row{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.center-third-row>.albums>img{
+  margin-right: 15px;
+  margin-top: 30px;
+  border-radius: 100%;
+}
+
+/* bottom section */
+
+.bottom-left{
+  width: 20%;
+  border: 1px solid white;
+  float: left;
+  height: inherit;
+}
+
+.bottom-center{
+  width: 60%;
+  border: 1px solid white;
+  float: left;
+  height: inherit;
+}
+
+.bottom-right{
+  width: 20%;
+  border: 1px solid white;
+  float: left;
+  height: inherit;
+}
+
+#small-preview{
+  height: 50px;
+}
+
+.bottom-left{
+  padding-top:10px;
+  color: white;
+  display: flex;
 
 }
