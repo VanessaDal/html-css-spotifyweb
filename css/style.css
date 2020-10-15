@@ -63,85 +63,7 @@
   z-index: 999;
 }
 
-/* hover classes */
 
-.white-hover:hover{
-  color: white;
-  cursor: pointer;
-}
-
-.album.hover{
-  background-color: rgba(103, 91, 118, 0.50);
-}
-
-.album-hover:hover{
-  opacity: 0.5;
-  cursor:pointer;
-}
-
-/*hover player */
-
-.containerim {
-  position: relative;
-  width: 50%;
-}
-
-.album-hover {
-  opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.middle {
-  opacity: 0;
-  position: absolute;
-  top: 35%;
-  left: 65%;
-}
-
-.containerim:hover .image {
-  opacity: 0.3;
-}
-
-.containerim:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 60px;
-  cursor: pointer;
-}
-
-.dot{
-  opacity: 0;
-  height: 17px;
-  width: 17px;
-  background-color: white;
-  border-radius: 100%;
-  position: relative;
-  left: 100%;
-  top: -6px;
-}
-
-.player-progress-bar1 {
-  opacity:0;
-  height: 100%;
-  background-color: green;
-  width: 30%;
-  border-radius: 10px;
-}
-
-.player:hover .dot{
-  opacity: 1;
-  cursor: pointer;
-}
-
-.player:hover .player-progress-bar1{
-  opacity: 1;
-  cursor: pointer;
-}
 
 /* top container */
 
@@ -479,7 +401,8 @@
   margin-top: 27px;
 }
 
-.player-progress-bar {
+#player-progress-bar {
+  opacity: 1;
   height: 100%;
   background-color: #C1C1C1;
   width: 30%;
@@ -529,4 +452,84 @@ margin-top: 15px;
   background-color: #C1C1C1;
   width: 20%;
   border-radius: 10px;
+}
+
+/* hover classes */
+
+.white-hover:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.album.hover{
+  background-color: rgba(103, 91, 118, 0.50);
+}
+
+.album-hover:hover{
+  opacity: 0.5;
+  cursor:pointer;
+}
+
+/*hover player */
+
+.containerim {
+  position: relative;
+  width: 50%;
+}
+
+.album-hover {
+  opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+  opacity: 0;
+  position: absolute;
+  top: 35%;
+  left: 65%;
+}
+
+.containerim:hover .image {
+  opacity: 0.3;
+}
+
+.containerim:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.dot{
+  opacity: 0;
+  height: 17px;
+  width: 17px;
+  background-color: white;
+  border-radius: 100%;
+  position: relative;
+  left: 100%;
+  top: -6px;
+}
+
+.green {
+  opacity:0;
+  height: 100%;
+  background-color: green;
+  width: 30%;
+  border-radius: 10px;
+}
+
+.player:hover .dot{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.player:hover .green{
+  opacity: 1;
+  cursor: pointer;
 }
