@@ -63,7 +63,7 @@
   z-index: 999;
 }
 
-/* over classes */
+/* hover classes */
 
 .white-hover:hover{
   color: white;
@@ -79,11 +79,69 @@
   cursor:pointer;
 }
 
-/* .play-hover{
-  display:none;
+/*hover player */
 
-} */
+.containerim {
+  position: relative;
+  width: 50%;
+}
 
+.album-hover {
+  opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+  opacity: 0;
+  position: absolute;
+  top: 35%;
+  left: 65%;
+}
+
+.containerim:hover .image {
+  opacity: 0.3;
+}
+
+.containerim:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.dot{
+  opacity: 0;
+  height: 17px;
+  width: 17px;
+  background-color: white;
+  border-radius: 100%;
+  position: relative;
+  left: 100%;
+  top: -6px;
+}
+
+.player-progress-bar1 {
+  opacity:0;
+  height: 100%;
+  background-color: green;
+  width: 30%;
+  border-radius: 10px;
+}
+
+.player:hover .dot{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.player:hover .player-progress-bar1{
+  opacity: 1;
+  cursor: pointer;
+}
 
 /* top container */
 
@@ -284,11 +342,24 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  flex-shrink: 3;
+  flex-shrink: 1;
 }
 
 .albums img{
   height: 200px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width:1580px){
+  .center-first-row{
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width:1140px){
+  .center-first-row{
+    justify-content: space-around;
+  }
 }
 
 .albums h3{
@@ -323,7 +394,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .center-second-row>.albums{
@@ -337,7 +408,7 @@
   flex-wrap: wrap;
 }
 
-.center-third-row>.albums>img{
+.album-round{
   margin-right: 15px;
   margin-top: 30px;
   border-radius: 100%;
