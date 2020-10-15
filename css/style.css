@@ -28,8 +28,6 @@
   justify-content: flex-end;
 }
 
-
-
 .container-float::after{
   content: "";
   display: table;
@@ -46,6 +44,7 @@
   background-color: #141922;
   overflow-y: scroll;
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 .container-bottom{
@@ -63,6 +62,14 @@
   overflow: hidden;
   z-index: 999;
 }
+
+/* white hover class */
+
+.white-hover:hover{
+  color: white;
+  cursor: pointer;
+}
+
 
 /* top container */
 
@@ -221,7 +228,11 @@
   font-weight: bold;
   font-size: 25px;
   margin-top: 10px;
-  margin-bottom: 20px;
+}
+
+.container-center p{
+  color: #6F7277;
+  margin-top: 10px;
 }
 
 .center-second-row{
