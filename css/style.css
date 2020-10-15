@@ -187,7 +187,7 @@
 }
 
 .albums img{
-  height: 180px;
+  height: 200px;
 }
 
 .container-center h2{
@@ -200,8 +200,9 @@
 
 .center-second-row{
   display: flex;
+  justify-content: flex-start;
   align-items: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .center-second-row>.albums{
@@ -230,28 +231,28 @@
 }
 
 .bottom-left{
-  width: 13%;
+  width: 18%;
   border: 1px solid green;
   float: left;
   height: inherit;
 }
 
 .bottom-center{
-  width: 74%;
+  width: 64%;
   border: 1px solid green;
   float: left;
   height: inherit;
 }
 
 .bottom-right{
-  width: 13%;
+  width: 18%;
   border: 1px solid green;
   float: left;
   height: inherit;
 }
 
 #small-preview{
-  height: 45px;
+  height: 40px;
 }
 
 .bottom-left {
@@ -260,11 +261,6 @@
   justify-content: space-around;
   align-items:center;}
 
-.bottom-center-icons{
-  text-align: center;
-  font-size:25px;
-  color: white;
-}
 
 .player{
   display: flex;
@@ -291,7 +287,7 @@
   width: 50%;
   background-color: #5A5A5A;
   border-radius: 10px;
-  margin-top: 30px;
+  margin-top: 27px;
 }
 
 .player-progress-bar {
@@ -299,5 +295,42 @@
   background-color: #C1C1C1;
   width: 30%;
   border-radius: 10px;
+}
 
+
+.bottom-center-icons{
+  text-align: center;
+  font-size:20px;
+  color: white;
+}
+
+.bottom-center-icons *{
+margin-right: 20px;
+margin-top: 15px;
+}
+
+.bottom-center-icons i:nth-child(3){
+  font-size: 35px;
+}
+
+/* bottom right */
+
+.bottom-right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.volume-bar {
+  height: 4px;
+  width: 50%;
+  background-color: #5A5A5A;
+  border-radius: 10px;
+}
+
+.volume-progress-bar {
+  height: 100%;
+  background-color: #C1C1C1;
+  width: 20%;
+  border-radius: 10px;
 }
