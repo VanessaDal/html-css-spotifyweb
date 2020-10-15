@@ -87,6 +87,8 @@
 
 /* left container */
 
+
+
 .spotify-logo>img{
   height: 40px;
   margin-top: 20px;
@@ -172,12 +174,19 @@
 /* center container */
 .center-top-part{
  display: flex;
- justify-content: space-between;
+ justify-content: flex-start;
  align-items: center;
+ flex-wrap: wrap;
  margin: 20px 200px;
  font-size: 13px;
  color: #64676C;
- font-weight: bolder;
+ padding: 0 10%;
+}
+
+.center-top-part>*{
+  padding-right: 5%;
+  padding-bottom: 5%;
+  font-weight: bold;
 }
 
 .center-first-row{
@@ -189,6 +198,22 @@
 
 .albums img{
   height: 200px;
+}
+
+.albums h3{
+  text-align: center;
+  color: white;
+  margin-top: 5px;
+}
+
+#stranger-things{
+  margin-top: 45px;
+}
+
+.albums h4{
+  text-align: center;
+  color: #74777C;
+  padding-top: 10px;
 }
 
 .container-center h2{
