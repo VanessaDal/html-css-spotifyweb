@@ -516,20 +516,21 @@ margin-top: 15px;
   top: -6px;
 }
 
-.green {
-  opacity:0;
-  height: 100%;
-  background-color: green;
-  width: 30%;
-  border-radius: 10px;
-}
-
-.player:hover .dot{
+#player-progress-bar:hover .dot{
   opacity: 1;
   cursor: pointer;
 }
 
-.player:hover .green{
+#player-progress-bar:hover{
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
+.volume-progress-bar:hover{
+  background-color: lightgreen;
+}
+
+.volume-progress-bar:hover .dot{
   opacity: 1;
   cursor: pointer;
 }
